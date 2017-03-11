@@ -1,8 +1,8 @@
-Hey {{ $user->username }}!
+Здравствуйте {{ $user->username }}!
 
-{{ $blueprint->post->user->username }} made a post in a discussion you're following: {{ $blueprint->post->discussion->title }}
+Участник {{ $blueprint->post->user->username }} оставил сообщение в теме: {{ $blueprint->post->discussion->title }}
 
-To view the new activity, check out the following link:
+Просмотреть больше информации вы можете, перейдя по следующей ссылке:
 {{ app()->url() }}/d/{{ $blueprint->post->discussion_id }}/{{ $blueprint->post->number }}
 
 ---
@@ -11,4 +11,4 @@ To view the new activity, check out the following link:
 
 ---
 
-You won't receive any more notifications about this discussion until you're up-to-date.
+С уважением, служба форума. 
